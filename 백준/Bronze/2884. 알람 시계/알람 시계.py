@@ -1,11 +1,7 @@
-h,m=map(int,input().split())
-if h==0 and m==0:
-    print(h+23,m+15)
-elif h>0 and h<24 and m<45:
-    print(h-1,m+15)
-elif h==24 and 45>m:
-    print(h-1,m+60)
-elif h==0 and m<45:
-    print(h+23,m-45+60)
+H, M = map(int,input().split())
+if M > 44:
+    print(H,M-45)
+elif M<45 and H>0:
+    print(H-1,M+15)
 else:
-    print(h,m-45)
+    print(23,M+15)
